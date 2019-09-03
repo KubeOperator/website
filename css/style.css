@@ -606,41 +606,6 @@ a:focus, a:hover {
 }
 
 /*=================================================================
-  About us section
-==================================================================*/
-.about {
-  padding: 100px 0;
-  background: #fff;
-}
-
-.about .btn-about {
-  background: #28ABE3;
-}
-
-.about h4 {
-  margin-top: 30px;
-}
-
-.about .feature-list {
-  margin-top: 10px;
-}
-
-.about .feature-list li {
-  width: 48%;
-  display: inline-block;
-  color: #666;
-  font-size: 13px;
-  font-family: "Catamaran", sans-serif;
-  margin-bottom: 5px;
-  font-weight: 600;
-}
-
-.about .feature-list li i {
-  color: #28ABE3;
-  margin-right: 8px;
-}
-
-/*=================================================================
   About us 2 section
 ==================================================================*/
 .about-2 {
@@ -676,7 +641,7 @@ a:focus, a:hover {
 ==================================================================*/
 .call-to-action {
   padding: 100px 0;
-  background: url("../images/call-to-action/call-to-action-bg-2.jpg");
+  background: url("../images/call-to-action-bg.jpg");
   background-size: cover;
   color: #fff;
 }
@@ -698,7 +663,7 @@ a:focus, a:hover {
 ==================================================================*/
 .call-to-action-2 {
   padding: 100px 0;
-  background-image: url("../images/call-to-action/call-to-action-bg.jpg");
+  background-image: url("../images/call-to-action-bg.jpg");
   background-size: cover;
   color: #fff;
 }

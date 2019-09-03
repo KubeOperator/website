@@ -18,11 +18,13 @@
 .title .border {
     background-color: #FC6454 !important;
 }
+
 .logo-foot{
     margin-top: 50px;
     margin-left: 50%;
     transform: translateX(-50%);
 }
+
 .title h2 {
     font-weight: 450 !important;
 }
