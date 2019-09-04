@@ -179,5 +179,21 @@ if (scroll > 200) {
 })(jQuery);
 
 
+function resizeHeader() {
+    		//获取浏览器宽度
+	var _width = $(window).width();
+	console.log(_width);
+	if (_width < 420) {
+		$("#web").addClass("hidden");
+		$("#phone").removeClass("hidden");
+		$("#phone").addClass("sticky-header");
+		$("#title").css("font-size", "30px");
+	} else {
+		$("#phone").addClass("hidden");
+		$("#web").removeClass("hidden");
+	}
+}
+resizeHeader();
+
 
                             
