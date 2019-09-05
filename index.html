@@ -75,24 +75,24 @@
   ==================================== -->
 
 
-	<!--
-Fixed Navigation
-==================================== -->
-	<header class="navigation navbar navbar-fixed-top">
+	<!--Web Fixed Navigation Start-->
+	<header id="web" class="navigation navbar navbar-fixed-top">
 		<div style="background: rgba(0,0,0,0.75);height: 40px ;padding-right: 50px;">
 		<ul class="navbar-nav navbar-right">
-		    <li>
-		        <span style="color: white;padding: 12px 25px;font-size: 12px;display: block;"><i
-		                class="fa fa-phone"></i> 400-052-0755</span>
-		    </li>
-		    <li>
-		        <a href="https://jinshuju.net/f/UFPJsq" target="_blank"
-		           style="background:#28ABE3;color: white;padding: 7px 25px;font-size: 12px;display: block;">预约演示</a>
-		    </li>
-		    <li>
-		        <a href="https://support.fit2cloud.com" target="_blank"
-		           style="color: white;padding: 7px 25px;font-size: 12px;display: block;">客户支持门户</a>
-		    </li>
+			<li>
+				<span style="color: white;padding: 12px 25px;font-size: 12px;display: block;">
+					<i class="fa fa-phone"></i>
+					400-052-0755
+				</span>
+			</li>
+			<li>
+				<a href="https://jinshuju.net/f/UFPJsq" target="_blank"
+				   style="background:#28ABE3;color: white;padding: 7px 25px;font-size: 12px;display: block;">预约演示</a>
+			</li>
+			<li>
+				<a href="https://support.fit2cloud.com" target="_blank"
+				   style="color: white;padding: 7px 25px;font-size: 12px;display: block;">客户支持门户</a>
+			</li>
 		</ul>
 		</div>
 		<div class="container">
@@ -108,28 +108,58 @@ Fixed Navigation
 				</a>
 				<!-- /logo -->
 			</div>
-			
+
 			<nav class="collapse navbar-collapse navbar-right">
 				<ul id="nav" class="nav navbar-nav menu">
 					<li><a target="_blank" href="https://github.com/kubeoperator/kubeoperator">Github</a></li>
 					<li><a target="_blank" href="https://github.com/KubeOperator/KubeOperator/releases">下载</a></li>
 					<li class="dropdown">
-	                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
-	                       aria-expanded="false">商业产品<span class="caret"></span></a>
-	                    <ul class="dropdown-menu">
-	                        <li><a target="_blank" href="https://www.fit2cloud.com/purchase/index.html">软件订阅服务</a></li>
-	                        <li><a target="_blank" href="https://www.fit2cloud.com/product/dbaas.html">FIT2CLOUD DBaaS 平台</a></li>
-	                    </ul>
-                	</li>
-                	<li><a href="#jumpserver">关于我们</a></li>
+						<a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+						   aria-expanded="false">商业产品<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a target="_blank" href="https://www.fit2cloud.com/purchase/index.html">软件订阅服务</a></li>
+							<li><a target="_blank" href="https://www.fit2cloud.com/product/dbaas.html">FIT2CLOUD DBaaS 平台</a></li>
+						</ul>
+					</li>
+					<li><a href="#jumpserver">关于我们</a></li>
 				</ul>
 			</nav>
-			
+
 		</div>
 	</header>
-	<!--
-End Fixed Navigation
-==================================== -->
+	<!--Web Fixed Navigation End-->
+
+	<!--Phone Fixed Navigation Start -->
+	<header id="phone" class="navigation navbar navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<!-- responsive nav button -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
+				<!-- /responsive nav button -->
+				<!-- logo -->
+				<a class="navbar-brand logo" href="index.html">
+					<img class="logo-default" src="images/logo-default.png" alt="logo" />
+					<img class="logo-white" src="images/logo-white.png" alt="logo" />
+				</a>
+				<!-- /logo -->
+			</div>
+			<nav class="collapse navbar-collapse navbar-right">
+				<ul id="nav" class="nav navbar-nav menu">
+					<li><a target="_blank" href="https://github.com/kubeoperator/kubeoperator">Github</a></li>
+					<li><a target="_blank" href="https://github.com/KubeOperator/KubeOperator/releases">下载</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">商业产品<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a target="_blank" href="https://www.fit2cloud.com/purchase/index.html">软件订阅服务</a></li>
+							<li><a target="_blank" href="https://www.fit2cloud.com/product/dbaas.html">FIT2CLOUD DBaaS 平台</a></li>
+						</ul>
+					</li>
+					<li><a href="#jumpserver">关于我们</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!--Phone Fixed Navigation End -->
 
 
 	<div class="rev_slider_wrapper fullwidthbanner-container">
@@ -210,7 +240,7 @@ Start About Section
 				</div>
 				<!-- /section title -->
 				<div class="col-md-12">
-					<div class="row text-center">
+					<div class="row text-center" style="float: none">
 						<div class="col-md-4 col-sm-4 col-xs-12">
 							<div class="service-item">
 								<i class="fa fa-shopping-cart"></i>
@@ -412,6 +442,7 @@ Start Call To Action
 				sliderLayout: 'fullscreen',
 
 			});
+			resizeHeader();
 		});
 	</script>
 
