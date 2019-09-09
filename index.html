@@ -9,11 +9,10 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>KubeOperator - 容器集群管理平台</title>
-	<meta name="description"
-          content="KubeOperator 帮助运维人员通过 Web-based UI，在完全离线和多云环境下，部署和管理生产级别的 Kubernetes 集群。">
-    <meta name="keywords"
-          content="KubeOperator, Kubernetes 安装工具, Kubernetes 部署工具, Kubernetes 管理工具, Kubernetes as a Service, Kubernetes 离线安装, K8S 安装工具, K8S 部署工具, K8S 管理工具, K8S as a Service, K8S 离线安装">
-    <meta name="author" content="杭州飞致云信息科技有限公司">
+	<meta name="description" content="KubeOperator 帮助运维人员通过 Web-based UI，在完全离线和多云环境下，部署和管理生产级别的 Kubernetes 集群。">
+	<meta name="keywords"
+		content="KubeOperator, Kubernetes 安装工具, Kubernetes 部署工具, Kubernetes 管理工具, Kubernetes as a Service, Kubernetes 离线安装, K8S 安装工具, K8S 部署工具, K8S 管理工具, K8S as a Service, K8S 离线安装">
+	<meta name="author" content="杭州飞致云信息科技有限公司">
 
 	<!-- Mobile Specific Meta
   ================================================== -->
@@ -55,6 +54,15 @@
 	<link rel="stylesheet" type="text/css" href="css/colors/light-blue.css" title="light-blue">
 	<link rel="stylesheet" type="text/css" href="css/colors/yellow.css" title="yellow">
 	<link rel="stylesheet" type="text/css" href="css/colors/light-green.css" title="light-green">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147297392-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-147297392-1');
+	</script>
 
 </head>
 
@@ -78,22 +86,22 @@
 	<!--Web Fixed Navigation Start-->
 	<header id="web" class="navigation navbar navbar-fixed-top">
 		<div style="background: rgba(0,0,0,0.75);height: 40px ;padding-right: 50px;">
-		<ul class="navbar-nav navbar-right">
-			<li>
-				<span style="color: white;padding: 12px 25px;font-size: 12px;display: block;">
-					<i class="fa fa-phone"></i>
-					400-052-0755
-				</span>
-			</li>
-			<li>
-				<a href="https://jinshuju.net/f/UFPJsq" target="_blank"
-				   style="background:#28ABE3;color: white;padding: 7px 25px;font-size: 12px;display: block;">预约演示</a>
-			</li>
-			<li>
-				<a href="https://support.fit2cloud.com" target="_blank"
-				   style="color: white;padding: 7px 25px;font-size: 12px;display: block;">客户支持门户</a>
-			</li>
-		</ul>
+			<ul class="navbar-nav navbar-right">
+				<li>
+					<span style="color: white;padding: 12px 25px;font-size: 12px;display: block;">
+						<i class="fa fa-phone"></i>
+						400-052-0755
+					</span>
+				</li>
+				<li>
+					<a href="https://jinshuju.net/f/UFPJsq" target="_blank"
+						style="background:#28ABE3;color: white;padding: 7px 25px;font-size: 12px;display: block;">预约演示</a>
+				</li>
+				<li>
+					<a href="https://support.fit2cloud.com" target="_blank"
+						style="color: white;padding: 7px 25px;font-size: 12px;display: block;">客户支持门户</a>
+				</li>
+			</ul>
 		</div>
 		<div class="container">
 			<div class="navbar-header">
@@ -116,11 +124,14 @@
 					<li><a target="_blank" href="https://github.com/KubeOperator/KubeOperator/releases">下载</a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
-						   aria-expanded="false">商业产品<span class="caret"></span></a>
+							aria-expanded="false">商业产品<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a target="_blank" href="https://www.fit2cloud.com/purchase/index.html">KubeOperator 软件订阅服务</a></li>						
-							<li><a target="_blank" href="https://www.fit2cloud.com/product/dbaas.html">FIT2CLOUD DBaaS 平台</a></li>
-							<li><a target="_blank" href="https://www.fit2cloud.com/product/index.html">FIT2CLOUD 云管平台（ CMP ）</a></li>														
+							<li><a target="_blank" href="https://www.fit2cloud.com/purchase/index.html">KubeOperator
+									软件订阅服务</a></li>
+							<li><a target="_blank" href="https://www.fit2cloud.com/product/dbaas.html">FIT2CLOUD DBaaS
+									平台</a></li>
+							<li><a target="_blank" href="https://www.fit2cloud.com/product/index.html">FIT2CLOUD 云管平台（
+									CMP ）</a></li>
 						</ul>
 					</li>
 					<li><a href="#jumpserver">关于我们</a></li>
@@ -136,7 +147,8 @@
 		<div class="container">
 			<div class="navbar-header">
 				<!-- responsive nav button -->
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".navbar-collapse"></button>
 				<!-- /responsive nav button -->
 				<!-- logo -->
 				<a class="navbar-brand logo" href="index.html">
@@ -150,10 +162,12 @@
 					<li><a target="_blank" href="https://github.com/kubeoperator/kubeoperator">Github</a></li>
 					<li><a target="_blank" href="https://github.com/KubeOperator/KubeOperator/releases">下载</a></li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">商业产品<span class="caret"></span></a>
+						<a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+							aria-expanded="false">商业产品<span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a target="_blank" href="https://www.fit2cloud.com/purchase/index.html">软件订阅服务</a></li>
-							<li><a target="_blank" href="https://www.fit2cloud.com/product/dbaas.html">FIT2CLOUD DBaaS 平台</a></li>
+							<li><a target="_blank" href="https://www.fit2cloud.com/product/dbaas.html">FIT2CLOUD DBaaS
+									平台</a></li>
 						</ul>
 					</li>
 					<li><a href="#jumpserver">关于我们</a></li>
@@ -194,10 +208,12 @@
 						data-x="center" data-y="center" data-voffset="['120']" data-fontsize="['18', '24', '22', '18']"
 						data-color="['#FFF']" style="z-index: 7; ">
 						KubeOperator 帮助运维人员通过 Web-based UI，在完全离线和多云环境下，部署和管理生产级别的 Kubernetes 集群。
-						<br/>KubeOperator 尤其适合在私有云平台（VMware 及 Openstack）上部署和管理 Kubernetes 集群，实现 Kubernetes as a Service。</div>
-						<!-- END LAYER -->
-					<a href="https://github.com/kubeoperator/kubeoperator" target="_blank" class="tp-caption btn btn-main" data-x="['center']" data-y="['center']"
-						data-whitespace="nowrap" data-visibility="['on', 'on', 'on', 'on']" data-type="text" data-voffset="['200']"
+						<br />KubeOperator 尤其适合在私有云平台（VMware 及 Openstack）上部署和管理 Kubernetes 集群，实现 Kubernetes as a
+						Service。</div>
+					<!-- END LAYER -->
+					<a href="https://github.com/kubeoperator/kubeoperator" target="_blank"
+						class="tp-caption btn btn-main" data-x="['center']" data-y="['center']" data-whitespace="nowrap"
+						data-visibility="['on', 'on', 'on', 'on']" data-type="text" data-voffset="['200']"
 						data-responsive_offset="on" data-responsive="on"
 						data-frames='[{"delay":2000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
 						data-textAlign="['center']" data-basealign="slide">访问 GitHub 项目</a>
@@ -218,7 +234,8 @@ Start About Section
 			<div class="row">
 				<div class="title text-center">
 					<h2>整体架构</h2>
-					<p>KubeOperator 是一个开源项目，帮助运维人员通过 Web-based UI，在完全离线和多云环境下，部署和管理生产级别的 Kubernetes 集群，实现 Kubernetes as a Service。</p>
+					<p>KubeOperator 是一个开源项目，帮助运维人员通过 Web-based UI，在完全离线和多云环境下，部署和管理生产级别的 Kubernetes 集群，实现 Kubernetes as
+						a Service。</p>
 					<div class="border"></div>
 				</div>
 				<div class="col-md-10 col-md-offset-1">
@@ -291,7 +308,7 @@ Start About Section
 		</div> <!-- End container -->
 	</section> <!-- End section -->
 
-	<section class="about-2 section" >
+	<section class="about-2 section">
 		<div class="container">
 			<div class="row">
 				<div class="title text-center">
@@ -304,8 +321,8 @@ Start About Section
 			</div> <!-- End row -->
 		</div> <!-- End container -->
 	</section> <!-- End section -->
-   
-    <!--
+
+	<!--
 	<section class="promo-video section-sm video-rewrite">
 		<div class="container">
 			<div class="row">
@@ -340,49 +357,65 @@ Start Call To Action
 
 
 	<section class="service-2 section" id="fit2cloud">
-	    <div class="container">
-	        <div class="row">
-	            <div class="col-md-4 col-sm-6 col-sm-6 text-left">
-	            	<br>
-	                <img src="images/logo-fit2cloud.svg" height="24px" width="222px" class="inline-block" alt="">
-	            </div>
-	            <div class="col-md-12">
-	                <div class="row text-center">
-	                    <div class="col-md-12 text-left">
-	                        <div class="title">
-	                            <br>
-	                            <p style="width: 100%;font-size: 16px;color: #333333;letter-spacing: 0;text-align: justify;">
-	                                FIT2CLOUD 飞致云创立于 2014 年，是中国领先的多云管理平台软件及服务提供商，致力于解决企业在多云环境下的服务化和管理、安全及数据库服务交付难题，帮助企业“管好云、控好云、用好云”，实现数字化转型和“Fit to Cloud”的愿景。
-	                            </p>
-	                            <br>
-	                            <p style="width: 100%;font-size: 16px;color: #333333;letter-spacing: 0;text-align: justify;">
-	                                2018 年 5 月，FIT2CLOUD 入选 2018 Gartner Cool Vendor，成为首家荣膺 Gartner Cool Vendor 称号的中国多云管理厂商。2019 年 5 月，FIT2CLOUD 进入 IDC 首次发布的中国云管理软件市场追踪报告，成为唯一被独立统计的中立型多云管理厂商。FIT2CLOUD 是亚马逊 AWS 合作伙伴网络 APN 的进阶级合作伙伴（Advanced Consulting Partner），是中国大陆首家获得 50 项 AWS 认证的企业。 FIT2CLOUD 同时是也是中国大陆首家拥有 20 位以上“红帽 OpenShift 认证管理员”的企业。
-	                            </p>
-	                            <br>
-	                            <p style="width: 100%;font-size: 16px;color: #333333;letter-spacing: 0;text-align: justify;">
-	                               FIT2CLOUD 云管平台（Cloud Management Platform）旨在以统一的方式帮助企业用户在多云环境下实现自动化、自助式的服务交付（例如虚机服务、容器服务、物理机服务、对象存储服务等），同时持续提升企业的运营效率及安全合规管控水平，支持企业从传统 IT 渐进、无缝地过渡到多云战略。
-	                            </p>
-	                            <br>
-	                            <p style="width: 100%;font-size: 16px;color: #333333;letter-spacing: 0;text-align: justify;">
-	                               Jumpserver 开源堡垒机为“FIT2CLOUD 飞致云”旗下子品牌。作为全球首款完全开源、符合 4A 规范的运维安全审计系统，Jumpserver 通过软件订阅服务或者软硬件一体机的方式，向企业级用户交付多云环境下更好用的堡垒机。
-	                            </p>
-	                            <br>
-	                            <p style="width: 100%;font-size: 16px;color: #333333;letter-spacing: 0;text-align: justify;">
-	                              FIT2CLOUD DBaaS 平台基于容器技术在多云环境下交付全托管（Fully-Managed）的 MySQL、Redis等数据库服务，助力企业快速开展业务创新。
-	                            </p>
-	                            <br>
-	                            <p style="width: 100%;font-size: 16px;color: #333333;letter-spacing: 0;text-align: justify;">
-	                                FIT2CLOUD的研发与服务团队分布在北京、上海、深圳、广州、南京、杭州和成都等地，其团队在企业 IT 云化转型、管理和运营大规模异构基础设施方面拥有丰富经验，客户覆盖金融、制造、能源、交通运输、电信、传媒、地产、互联网等行业。
-	                            </p>
-     							<br>
-                                <a class="btn btn-main" href="http://www.fit2cloud.com">了解更多信息</a>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>    <!-- End row -->
-	    </div>    <!-- End container -->
-	</section>	
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-6 col-sm-6 text-left">
+					<br>
+					<img src="images/logo-fit2cloud.svg" height="24px" width="222px" class="inline-block" alt="">
+				</div>
+				<div class="col-md-12">
+					<div class="row text-center">
+						<div class="col-md-12 text-left">
+							<div class="title">
+								<br>
+								<p
+									style="width: 100%;font-size: 16px;color: #333333;letter-spacing: 0;text-align: justify;">
+									FIT2CLOUD 飞致云创立于 2014
+									年，是中国领先的多云管理平台软件及服务提供商，致力于解决企业在多云环境下的服务化和管理、安全及数据库服务交付难题，帮助企业“管好云、控好云、用好云”，实现数字化转型和“Fit
+									to Cloud”的愿景。
+								</p>
+								<br>
+								<p
+									style="width: 100%;font-size: 16px;color: #333333;letter-spacing: 0;text-align: justify;">
+									2018 年 5 月，FIT2CLOUD 入选 2018 Gartner Cool Vendor，成为首家荣膺 Gartner Cool Vendor
+									称号的中国多云管理厂商。2019 年 5 月，FIT2CLOUD 进入 IDC
+									首次发布的中国云管理软件市场追踪报告，成为唯一被独立统计的中立型多云管理厂商。FIT2CLOUD 是亚马逊 AWS 合作伙伴网络 APN
+									的进阶级合作伙伴（Advanced Consulting Partner），是中国大陆首家获得 50 项 AWS 认证的企业。 FIT2CLOUD
+									同时是也是中国大陆首家拥有 20 位以上“红帽 OpenShift 认证管理员”的企业。
+								</p>
+								<br>
+								<p
+									style="width: 100%;font-size: 16px;color: #333333;letter-spacing: 0;text-align: justify;">
+									FIT2CLOUD 云管平台（Cloud Management
+									Platform）旨在以统一的方式帮助企业用户在多云环境下实现自动化、自助式的服务交付（例如虚机服务、容器服务、物理机服务、对象存储服务等），同时持续提升企业的运营效率及安全合规管控水平，支持企业从传统
+									IT 渐进、无缝地过渡到多云战略。
+								</p>
+								<br>
+								<p
+									style="width: 100%;font-size: 16px;color: #333333;letter-spacing: 0;text-align: justify;">
+									Jumpserver 开源堡垒机为“FIT2CLOUD 飞致云”旗下子品牌。作为全球首款完全开源、符合 4A 规范的运维安全审计系统，Jumpserver
+									通过软件订阅服务或者软硬件一体机的方式，向企业级用户交付多云环境下更好用的堡垒机。
+								</p>
+								<br>
+								<p
+									style="width: 100%;font-size: 16px;color: #333333;letter-spacing: 0;text-align: justify;">
+									FIT2CLOUD DBaaS 平台基于容器技术在多云环境下交付全托管（Fully-Managed）的 MySQL、Redis等数据库服务，助力企业快速开展业务创新。
+								</p>
+								<br>
+								<p
+									style="width: 100%;font-size: 16px;color: #333333;letter-spacing: 0;text-align: justify;">
+									FIT2CLOUD的研发与服务团队分布在北京、上海、深圳、广州、南京、杭州和成都等地，其团队在企业 IT
+									云化转型、管理和运营大规模异构基础设施方面拥有丰富经验，客户覆盖金融、制造、能源、交通运输、电信、传媒、地产、互联网等行业。
+								</p>
+								<br>
+								<a class="btn btn-main" href="http://www.fit2cloud.com">了解更多信息</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- End row -->
+		</div> <!-- End container -->
+	</section>
 
 	<footer id="footer" class="bg-one">
 		<div class="footer-bottom">
@@ -421,14 +454,17 @@ Start Call To Action
     (Load Extensions only on Local File Systems !
     The following part can be removed on Server for On Demand Loading) -->
 	<script type="text/javascript" src="plugins/revo-slider/js/extensions/revolution.extension.actions.min.js"></script>
-	<script type="text/javascript" src="plugins/revo-slider/js/extensions/revolution.extension.carousel.min.js"></script>
+	<script type="text/javascript"
+		src="plugins/revo-slider/js/extensions/revolution.extension.carousel.min.js"></script>
 	<script type="text/javascript" src="plugins/revo-slider/js/extensions/revolution.extension.kenburn.min.js"></script>
 	<script type="text/javascript"
 		src="plugins/revo-slider/js/extensions/revolution.extension.layeranimation.min.js"></script>
-	<script type="text/javascript" src="plugins/revo-slider/js/extensions/revolution.extension.migration.min.js"></script>
+	<script type="text/javascript"
+		src="plugins/revo-slider/js/extensions/revolution.extension.migration.min.js"></script>
 	<script type="text/javascript"
 		src="plugins/revo-slider/js/extensions/revolution.extension.navigation.min.js"></script>
-	<script type="text/javascript" src="plugins/revo-slider/js/extensions/revolution.extension.parallax.min.js"></script>
+	<script type="text/javascript"
+		src="plugins/revo-slider/js/extensions/revolution.extension.parallax.min.js"></script>
 	<script type="text/javascript"
 		src="plugins/revo-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
 	<script type="text/javascript" src="plugins/revo-slider/js/extensions/revolution.extension.video.min.js"></script>
