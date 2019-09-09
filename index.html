@@ -46,6 +46,7 @@
 	<!-- Main Stylesheet -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/index.css">
+	<link rel='stylesheet prefetch' href='css/slick.css'>
 
 	<!-- Colors -->
 	<link rel="stylesheet" type="text/css" href="css/colors/green.css" title="green">
@@ -308,19 +309,73 @@ Start About Section
 		</div> <!-- End container -->
 	</section> <!-- End section -->
 
-	<section class="about-2 section" id="sceenshot">
+	<!--功能截屏 Start-->
+	<section class="about-2 section"  style="margin-bottom: 50px" id="sceenshot">
 		<div class="container">
 			<div class="row">
-				<div class="title text-center">
+				<div class=" text-center">
 					<h2>功能截屏</h2>
 					<div class="border"></div>
 				</div>
-				<div class="col-md-10 col-md-offset-1">
-					<img src="images/kubeops.png" class="img-responsive" alt="">
-				</div>
-			</div> <!-- End row -->
-		</div> <!-- End container -->
-	</section> <!-- End section -->
+			</div>
+		</div>
+		<div id="slider" class="slider">
+			<div>
+				<img src="images/00.jpg" alt="">
+			</div>
+			<div>
+				<img src="images/01.jpg" alt="">
+			</div>
+			<div>
+				<img src="images/02.jpg" alt="">
+			</div>
+			<div>
+				<img src="images/03.jpg" alt="">
+			</div>
+			<div>
+				<img src="images/04.jpg" alt="">
+			</div>
+			<div>
+				<img src="images/05.jpg" alt="">
+			</div>
+			<div>
+				<img src="images/06.jpg" alt="">
+			</div>
+			<div>
+				<img src="images/07.jpg" alt="">
+			</div>
+			<div>
+				<img src="images/08.jpg" alt="">
+			</div>
+			<div>
+				<img src="images/09.jpg" alt="">
+			</div>
+			<div>
+				<img src="images/10.jpg" alt="">
+			</div>
+			<div>
+				<img src="images/11.jpg" alt="">
+			</div>
+			<div>
+				<img src="images/12.jpg" alt="">
+			</div>
+			<div>
+				<img src="images/13.jpg" alt="">
+			</div>
+			<div>
+				<img src="images/14.jpg" alt="">
+			</div>
+			<div>
+				<img src="images/15.jpg" alt="">
+			</div>
+			<div>
+				<img src="images/16.jpg" alt="">
+			</div>
+		</div>
+	</section>
+
+
+	<!--功能截屏 End-->
 
 	<!--
 	<section class="promo-video section-sm video-rewrite" id="video">
@@ -483,6 +538,24 @@ Start Call To Action
 			});
 			resizeHeader();
 		});
+		$('.slider').slick({
+            arrows: true,
+            dots: false,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            centerMode: true,
+            variableWidth: true,
+            draggable: false,}
+         );
+
+        $('.slider')
+            .on('beforeChange', function(event, slick, currentSlide, nextSlide){
+            $('.slick-list').addClass('do-transition')
+            })
+            .on('afterChange', function(){
+            $('.slick-list').removeClass('do-transition')
+            });
 	</script>
 
 </body>
