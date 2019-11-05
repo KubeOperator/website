@@ -2073,4 +2073,14 @@ a:focus, a:hover {
   }
 }
 
+.phone-btn-main {
+    background: #FC6454;
+    border: 1px solid #FC6454;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 40px;
+}
 /*# sourceMappingURL=maps/style.css.map */

@@ -186,14 +186,19 @@ function resizeHeader() {
 	if (_width < 420) {
 		$("#web").addClass("hidden");
 		$("#phone").removeClass("hidden");
+		$("#web-kubernetes-banner").addClass("hidden");
+		$("#phone-kubernetes-banner").removeClass("hidden");
 		$("#phone").addClass("sticky-header");
 		$("#title").css("font-size", "30px");
 	} else {
 		$("#phone").addClass("hidden");
 		$("#web").removeClass("hidden");
+		$("#phone-kubernetes-banner").addClass("hidden");
+		$("#web-kubernetes-banner").removeClass("hidden");
+
 	}
 }
-resizeHeader();
+// resizeHeader();
 
 
                             
