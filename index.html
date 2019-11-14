@@ -272,9 +272,8 @@
     </div>    <!-- End container -->
 </section>
 
-	<!--
-Start About Section
-==================================== -->
+
+	<!--整体架构 Start-->
 	<section class="about-2 section" id="about">
 		<div class="container">
 			<div class="row">
@@ -288,11 +287,10 @@ Start About Section
 				</div>
 			</div> <!-- End row -->
 		</div> <!-- End container -->
-	</section> <!-- End section -->
+	</section>
+	<!--整体架构 ENd-->
 
-	<!--
-Start About Section
-==================================== -->
+	<!--技术优势 Start-->
 	<section class="service-2 section section-rewrite">
 		<div class="container">
 			<div class="row">
@@ -351,18 +349,141 @@ Start About Section
 				</div>
 			</div> <!-- End row -->
 		</div> <!-- End container -->
-	</section> <!-- End section -->
+	</section>
+	<!--技术优势 End-->
+
+	<!--功能列表 Start-->
+	<span class="anchor"></span>
+	<section class="about-2">
+		<div class="container">
+			<div class="row">
+				<!-- section title -->
+				<div class="title text-center">
+					<h2>功能列表</h2>
+					<div class="border"></div>
+				</div>
+				<!-- /section title -->
+
+				<!-- Single Service Item -->
+				<div class="col-md-12 col-sm-12 col-xs-12 subscription-div" style="margin-top: 0px">
+					<table class="subscription-table">
+						<tbody >
+							<tr>
+								<td class="table-title-1" rowspan="13">集群 Day 0 规划</td>
+								<td class="table-title-2" rowspan="2">集群模式</td>
+								<td>1 个 Master 节点 n 个 Worker 节点模式：适合开发测试用途</td>
+							</tr>
+							<tr>
+								<td class="td-bg-color">3 个 Master 节点 n 个 Worker 节点模式：适合生产用途</td>
+							</tr>
+							<tr>
+								<td class="table-title-2" rowspan="3">计算方案</td>
+								<td>独立主机：支持自行准备的虚机和物理机</td>
+							</tr>
+							<tr>
+								<td class="td-bg-color">vSphere 平台：支持自动创建主机（使用 Terraform）</td>
+							</tr>
+							<tr>
+								<td>Openstack 平台：支持自动创建主机 （使用 Terraform）</td>
+							</tr>
+							<tr>
+								<td class="table-title-2" rowspan="3">存储方案</td>
+								<td class="td-bg-color">独立主机：支持 NFS / Ceph RBD (通过 Rook) / NetApp （通过Trident)</td>
+							</tr>
+							<tr>
+								<td>vSphere 平台：支持 vSphere Datastore （vSAN 及 vSphere 兼容的集中存储）</td>
+							</tr>
+							 <tr>
+								<td class="td-bg-color">Openstack 平台：支持 Openstack Cinder （Ceph 及 Cinder 兼容的集中存储）</td>
+							</tr>
+							<tr>
+								<td  class="table-title-2" rowspan="4">网络方案</td>
+								<td>支持 Flannel / Calico 网络插件</td>
+							</tr>
+							<tr>
+								<td class="td-bg-color">支持通过 F5 Big IP 对外暴露服务</td>
+							</tr>
+							<tr>
+								<td>支持 Traefik</td>
+							</tr>
+							<tr>
+								<td class="td-bg-color">支持 CoreDNS</td>
+							</tr>
+							<tr>
+								<td class="table-title-2">操作系统</td>
+								<td>支持 CentOS 7.4 / 7.5 / 7.6 / 7.7</td>
+							</tr>
+							<tr>
+								<td class="table-title-1" rowspan="3">集群 Day 1 部署</td>
+								<td class="table-title-2" rowspan="3">部署</td>
+								<td class="td-bg-color">提供离线环境下的完整安装包</td>
+							</tr>
+							 <tr>
+								<td>支持可视化方式展示部署过程</td>
+							</tr>
+							 <tr>
+								<td class="td-bg-color">支持一键自动化部署（使用 Ansible）</td>
+							</tr>
+							<tr>
+								<td class="table-title-1" rowspan="11">集群 Day 2 运营</td>
+								<td class="table-title-2" rowspan="4">管理</td>
+								<td>内置 K8s 官方的 Dashboard 管理应用</td>
+							</tr>
+							 <tr>
+								 <td class="td-bg-color">内置 Weave Scope 管理应用</td>
+							</tr>
+							<tr>
+								 <td>提供 Web Kubectl 界面</td>
+							</tr>
+							<tr>
+								 <td class="td-bg-color">内置 Helm</td>
+							</tr>
+							<tr>
+								<td class="table-title-2" rowspan="3">可观察性</td>
+								 <td>内置 Promethus，支持对集群、节点、Pod、Container的全方位监控和告警</td>
+							</tr>
+							 <tr>
+								<td class="td-bg-color">内置 Loki 日志方案</td>
+							</tr>
+							<tr>
+								<td>内置 Grafana 作为监控和日志展示</td>
+							</tr>
+							<tr>
+								<td class="table-title-2">升级</td>
+								<td class="td-bg-color">支持集群升级</td>
+							</tr>
+							<tr>
+								<td class="table-title-2">伸缩</td>
+								<td>支持增加或者减少 Worker 节点</td>
+							</tr>
+							<tr>
+								<td class="table-title-2">备份</td>
+								<td class="td-bg-color">支持 etcd 定期备份</td>
+							</tr>
+							<tr>
+								<td class="table-title-2">应用商店</td>
+								<td>集成 KubeApps 应用商店</td>
+							</tr>
+ 						</tbody>
+					</table>
+				</div>
+
+			</div>        <!-- End row -->
+		</div>    <!-- End container -->
+	</section>
+	<!--功能列表 Ebd-->
+
 
 	<!--功能截屏 Start-->
-	<section class="about-2 section"   id="screenshot">
+	<section class="section"   id="screenshot">
 		<div class="container">
 			<div class="row">
 				<div class=" text-center">
 					<h2>功能截屏</h2>
 					<div class="border"></div>
 				</div>
-			</div>
-		</div>
+			</div> <!-- End row -->
+		</div> <!-- End container -->
 		<div id="slider" class="slider">
 			<div>
 				<img src="images/01.jpg" alt="">
@@ -440,6 +561,7 @@ Start About Section
 	</section>
 	<!--功能截屏 End-->
 
+	<!--视频演示 Start-->
 	<section class="promo-video section-sm video-rewrite" id="video">
 		<div class="container">
 			<div class="row">
@@ -453,13 +575,12 @@ Start About Section
                             controls=""
                             src=" https://kubeoperator-1256577600.file.myqcloud.com/video/KubeOperator2.1.mp4"></video>
 				</div>
-			</div>
-		</div>
-	</section> 
+			</div> <!-- End row -->
+		</div> <!-- End container -->
+	</section>
+	<!--视频演示 End-->
 
-	<!--
-Start Call To Action
-==================================== -->
+	<!--Jumpserver 团队 Start -->
 	<section class="call-to-action section" id="jumpserver">
 		<div class="container">
 			<div class="row">
@@ -470,9 +591,10 @@ Start Call To Action
 				</div>
 			</div> <!-- End row -->
 		</div> <!-- End container -->
-	</section> <!-- End section -->
+	</section>
+	<!--Jumpserver 团队 End -->
 
-
+	<!--Fit2cloud介绍 Start-->
 	<section class="service-2 section" id="fit2cloud">
 		<div class="container">
 			<div class="row">
@@ -533,16 +655,17 @@ Start Call To Action
 			</div> <!-- End row -->
 		</div> <!-- End container -->
 	</section>
+	<!--Fit2cloud介绍 End-->
 
+	<!--footer Start-->
 	<footer id="footer" class="bg-one">
 		<div class="footer-bottom">
 			<h5>2014-2019 版权所有©FIT2CLOUD 飞致云</h5>
 		</div>
-	</footer> <!-- end footer -->
+	</footer>
+	<!--footer End -->
 
 
-	<!-- end Footer Area
-    ========================================== -->
 
 	<!--
     Essential Scripts
