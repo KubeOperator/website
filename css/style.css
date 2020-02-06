@@ -1273,7 +1273,7 @@ a:focus, a:hover {
   background: #28ABE3;
   position: relative;
   padding-bottom: 0px;
-  margin-bottom: 80px;
+  /*margin-bottom: 80px;*/
 }
 
 .testimonial:before {
@@ -1283,7 +1283,7 @@ a:focus, a:hover {
   left: 0%;
   right: 0%;
   bottom: 0;
-  height: 150px;
+  /*height: 150px;*/
   background-color: white;
 }
 
@@ -1973,6 +1973,15 @@ a:focus, a:hover {
   }
   .author-avatar {
     margin-right: 10px;
+  }
+  .phone-title {
+        font-size: 30px !important;
+    }
+  .phone-text {
+        font-size: 14px !important;
+    }
+  .phone-height{
+    height: 80vh !important;
   }
 }
 

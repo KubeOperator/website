@@ -15,15 +15,13 @@
 		content="KubeOperator, K8s 部署，K8s 搭建，K8s 安装，Kubernetes 安装, Kubernetes 部署, Kubernetes 搭建, Kubernetes as a Service, Kubernetes 离线安装, K8s 安装工具, K8s 部署工具, K8s 管理工具, K8s as a Service, K8s 离线安装">
 	<meta name="author" content="杭州飞致云信息科技有限公司">
 
-	<!-- Mobile Specific Meta
-  ================================================== -->
+	<!-- Mobile Specific Meta ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
 
-	<!-- CSS
-  ================================================== -->
+	<!-- CSS================================================== -->
 	<!-- RS5.0 Main Stylesheet -->
 	<link rel="stylesheet" type="text/css" href="plugins/revo-slider/css/settings.css">
 	<!-- RS5.0 Layers and Navigation Styles -->
@@ -68,9 +66,7 @@
 
 <body id="body">
 
-	<!--
-  Start Preloader
-  ==================================== -->
+	<!--Start Preloader-->
 	<div id="preloader">
 		<div class='preloader'>
 			<span></span>
@@ -78,35 +74,36 @@
 			<span></span>
 		</div>
 	</div>
-	<!--
-  End Preloader
-  ==================================== -->
+	<!--End Preloader-->
 
-
-	<!--Web Fixed Navigation Start-->
+	<!--header-web-->
 	<header id="web" class="navigation navbar navbar-fixed-top">
-		<div style="background: rgba(0,0,0,0.75);height: 40px ;padding-right: 50px;">
+		<div id="headerTop" style="background: rgba(0,0,0,0.75);height: 40px ;padding-right: 50px;">
 			<ul class="navbar-nav navbar-right">
 				<li>
-					<span style="color: white;padding: 12px 25px;font-size: 12px;display: block;">
-						<i class="fa fa-phone"></i>
-						400-052-0755
-					</span>
-				</li>
-				<li>
-					<a href="https://jinshuju.net/f/UFPJsq" target="_blank"
-						style="background:#28ABE3;color: white;padding: 7px 25px;font-size: 12px;display: block;">预约演示</a>
-				</li>
-				<li>
-					<a href="https://support.fit2cloud.com" target="_blank"
-						style="color: white;padding: 7px 25px;font-size: 12px;display: block;">客户支持门户</a>
-				</li>
+						<span style="color: white;padding: 12px 25px;font-size: 12px;display: block;">
+							<i class="fa fa-phone"></i>
+							400-052-0755
+						</span>
+					</li>
+					<li>
+						<a href="https://jinshuju.net/f/UFPJsq" target="_blank"
+							style="background:#28ABE3;color: white;padding: 7px 25px;font-size: 12px;display: block;">预约演示</a>
+					</li>
+					<li>
+						<a href="https://support.fit2cloud.com" target="_blank"
+							style="color: white;padding: 7px 25px;font-size: 12px;display: block;">客户支持门户</a>
+					</li>
 			</ul>
 		</div>
-		<div class="container">
+		<div class="container" style="clear:both">
 			<div class="navbar-header">
 				<!-- responsive nav button -->
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
 				</button>
 				<!-- /responsive nav button -->
 				<!-- logo -->
@@ -116,41 +113,45 @@
 				</a>
 				<!-- /logo -->
 			</div>
-
+			<!-- main nav -->
 			<nav class="collapse navbar-collapse navbar-right">
-				<ul id="nav" class="nav navbar-nav menu">
+				<ul class="nav navbar-nav menu">
 					<li><a target="_blank" href="https://docs.kubeoperator.io/">文档</a></li>
-					<li><a target="_blank" href="https://github.com/KubeOperator/KubeOperator/releases">下载</a></li>
-					<li><a target="_blank" href="http://blog.fit2cloud.com/">博客</a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
-							aria-expanded="false">商业产品<span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a target="_blank" href="https://www.fit2cloud.com/purchase/index.html">KubeOperator
-									软件订阅服务</a></li>
-							<li><a target="_blank" href="https://www.fit2cloud.com/product/dbaas.html">FIT2CLOUD DBaaS
-									平台</a></li>
-							<li><a target="_blank" href="https://www.fit2cloud.com/product/index.html">FIT2CLOUD
-									云管平台</a></li>
-						</ul>
-					</li>
-					<li><a target="_blank" href="https://jinshuju.net/f/QrZJpt">技术咨询</a></li>
-					<li><a href="#jumpserver">关于我们</a></li>
-					<li><a href="" style="margin-top: 3px;"><iframe src="https://ghbtns.com/github-btn.html?user=kubeoperator&repo=kubeoperator&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe></a></li>
+						<li><a target="_blank" href="https://github.com/KubeOperator/KubeOperator/releases">下载</a></li>
+						<li><a target="_blank" href="http://blog.fit2cloud.com/">博客</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+								aria-expanded="false">商业产品<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a target="_blank" href="https://www.fit2cloud.com/purchase/index.html">KubeOperator
+										软件订阅服务</a></li>
+								<li><a target="_blank" href="https://www.fit2cloud.com/product/dbaas.html">FIT2CLOUD DBaaS
+										平台</a></li>
+								<li><a target="_blank" href="https://www.fit2cloud.com/product/index.html">FIT2CLOUD
+										云管平台</a></li>
+							</ul>
+						</li>
+						<li><a target="_blank" href="https://jinshuju.net/f/QrZJpt">技术咨询</a></li>
+						<li><a href="#jumpserver">关于我们</a></li>
+						<li><a href="" style="margin-top: 3px;"><iframe src="https://ghbtns.com/github-btn.html?user=kubeoperator&repo=kubeoperator&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe></a></li>
+
 				</ul>
 			</nav>
-
+			<!-- /main nav -->
 		</div>
-	</header>
-	<!--Web Fixed Navigation End-->
+</header>
 
-	<!--Phone Fixed Navigation Start -->
-	<header id="phone" class="navigation navbar navbar-fixed-top">
-		<div class="container">
+	<!--header-phone-->
+	<header id="phone" class="navigation navbar navbar-fixed-top sticky-header">
+		<div class="container" style="clear:both">
 			<div class="navbar-header">
 				<!-- responsive nav button -->
-				<button type="button" class="navbar-toggle" data-toggle="collapse"
-					data-target=".navbar-collapse"></button>
+				<button type="button" class="navbar-toggle text-center" data-toggle="collapse" data-target=".navbar-collapse" style="width:11vw; height:5vh;">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 				<!-- /responsive nav button -->
 				<!-- logo -->
 				<a class="navbar-brand logo" href="index.html">
@@ -159,78 +160,73 @@
 				</a>
 				<!-- /logo -->
 			</div>
+			<!-- main nav -->
 			<nav class="collapse navbar-collapse navbar-right">
-				<ul id="nav" class="nav navbar-nav menu">
+				<ul class="nav navbar-nav menu">
 					<li><a target="_blank" href="https://docs.kubeoperator.io/">文档</a></li>
 					<li><a target="_blank" href="https://github.com/kubeoperator/kubeoperator">Github</a></li>
 					<li><a target="_blank" href="https://github.com/KubeOperator/KubeOperator/releases">下载</a></li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
-							aria-expanded="false">商业产品<span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a target="_blank" href="https://www.fit2cloud.com/purchase/index.html">KubeOperator
-									软件订阅服务</a></li>
-							<li><a target="_blank" href="https://www.fit2cloud.com/product/dbaas.html">FIT2CLOUD DBaaS
-									平台</a></li>
-							<li><a target="_blank" href="https://www.fit2cloud.com/product/index.html">FIT2CLOUD
-									云管平台</a></li>
-						</ul>
-					</li>
+							<a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+								aria-expanded="false">商业产品<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a target="_blank" href="https://www.fit2cloud.com/purchase/index.html">KubeOperator
+										软件订阅服务</a></li>
+								<li><a target="_blank" href="https://www.fit2cloud.com/product/dbaas.html">FIT2CLOUD DBaaS
+										平台</a></li>
+								<li><a target="_blank" href="https://www.fit2cloud.com/product/index.html">FIT2CLOUD
+										云管平台</a></li>
+							</ul>
+						</li>
 					<li><a target="_blank" href="https://jinshuju.net/f/QrZJpt">技术咨询</a></li>
 					<li><a href="#jumpserver">关于我们</a></li>
 				</ul>
 			</nav>
+			<!-- /main nav -->
 		</div>
 	</header>
-	<!--Phone Fixed Navigation End -->
 
+	<!--Banner-landing-->
+	<section class="testimonial section phone-height" style="background-image: url(images/landing.jpg) ;background-size: cover;padding-top: 0;height: 100vh">
+		<div class="container">
+			<div class="row"
+				 style="margin-top: -moz-calc((100vh - 200px)/2);    margin-top: -webkit-calc((100vh - 200px)/2);    margin-top: calc((100vh - 200px)/2);">
+				<div class="col-lg-12">
+					<!-- testimonial wrapper -->
+					<div class="testimonial-slider">
+						<!-- testimonial single -->
 
-	<div class="rev_slider_wrapper fullwidthbanner-container">
+						<div class="item text-center">
+							<div class="client-details">
+								<div class="testimonial-slider">
+									<div class="row">
+										<div class="col-md-12 text-center">
+											<div class="col-md-12 text-center phone-title" style="font-size: 64px; font-weight: 500;letter-spacing:2px;padding-bottom: 10px;color: white">
+												从这里开启您的 Kubernetes 之旅
+											</div>
+											<p class="phone-text" style="font-size: 20px;width: 100%;font-weight: 300;">
+												KubeOperator 是一个开源项目，在离线网络环境下，通过可视化 Web UI 在 VMware、Openstack 或者物理机上规划、部署和运营生产级别的 Kubernetes 集群。
+											</p>
+											<ul class="list-inline wow fadeInUp text-center" data-wow-duration=".5s" data-wow-delay=".10s" style="margin-top: 50px">
+												<li>
+													<a data-scroll href="https://github.com/kubeoperator/kubeoperator" target="_blank" class="btn btn-main">
+														访问 GitHub 项目
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 
-		<!-- the ID here will be used in the inline JavaScript below to initialize the slider -->
-		<div id="rev_slider_1" class="rev_slider" data-version="5.4.5" style="display:none">
+					</div>
+				</div>        <!-- end col lg 12 -->
+			</div>        <!-- End row -->
+		</div>       <!-- End container -->
+	</section>
 
-			<ul>
-				<!-- *********************** -->
-				<!-- Slides to be added here -->
-				<!-- *********************** -->
-				<!-- MINIMUM SLIDE STRUCTURE -->
-				<li data-transition="slidingoverlayup" data-delay="6000">
-
-					<!-- SLIDE'S MAIN BACKGROUND IMAGE -->
-					<img alt="Ocean" class="rev-slidebg" data-bgposition="center center" data-bgfit="cover"
-						data-bgrepeat="no-repeat" src="images/landing.jpg" alt="Ocean" class="rev-slidebg">
-					<!-- Start New layer -->
-					<div class="tp-caption tp-resizeme z-index-1 mobile-title"
-						data-frames='[{"delay":900,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-						data-textAlign="['center']" data-lineheight="['70', '32', '32', '24']"
-						data-visibility="['on', 'on', 'on', 'on']" data-x="center" data-y="center"
-						data-fontsize="['60', '24', '22', '18']" data-color="['#FFF', '#FFF', '#000', '#000']"
-						style="z-index: 7;font-family: Montserrat, sans-serif;  text-transform: font-weight: 700; letter-spacing:1px;">
-						从这里开启您的 Kubernetes 之旅</div><!-- END LAYER -->
-					<!-- Start New layer -->
-					<div class="tp-caption tp-resizeme z-index-1 mobile-content"
-						data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-						data-textAlign="['center']" data-lineheight="['25']" data-visibility="['on', 'on', 'on', 'on']"
-						data-x="center" data-y="center" data-voffset="['120']" data-fontsize="['18', '24', '22', '18']"
-						data-color="['#FFF']" style="z-index: 7; ">KubeOperator 是一个开源项目，在离线网络环境下，通过可视化 Web UI 在
-						VMware、Openstack 或者物理机上规划、部署和运营生产级别的 Kubernetes 集群。</div>
-					<!-- END LAYER -->
-					<a href="https://github.com/kubeoperator/kubeoperator" target="_blank"
-						class="tp-caption btn btn-main mobile-button" data-x="['center']" data-y="['center']"
-						data-whitespace="nowrap" data-visibility="['on', 'on', 'on', 'on']" data-type="text"
-						data-voffset="['200']" data-responsive_offset="on" data-responsive="on"
-						data-frames='[{"delay":2000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-						data-textAlign="['center']" data-basealign="slide">访问 GitHub 项目</a>
-
-				</li>
-			</ul>
-			<div class="tp-bannertimer  tp-bottom" style="height: 6px; background-color: rgba(0, 0, 0, 0.25);"></div>
-
-		</div>
-
-	</div>
-
+	<!--web-kubernetes-banner-->
 	<section id="web-kubernetes-banner" class="service-2 section"
 		style="background-image: url(images/gartner-bg2.png);padding-top: 0px;padding-bottom: 0px;">
 		<div class="container">
@@ -258,8 +254,8 @@
 		</div> <!-- End container -->
 	</section>
 
-	<section id="phone-kubernetes-banner" class="service-2 section"
-		style="background-image: url(images/gartner-bg2.png);padding-top: 0px;padding-bottom: 0px;">
+	<!--phone-kubernetes-banner-->
+	<section id="phone-kubernetes-banner" class="service-2 section" style="background-image: url(images/gartner-bg2.png);padding-top: 0px;padding-bottom: 0px;">
 		<div class="container">
 			<div class="row">
 				<div class=" col-xs-4 text-center"
@@ -283,7 +279,6 @@
 			</div> <!-- End row -->
 		</div> <!-- End container -->
 	</section>
-
 
 	<!--整体架构 Start-->
 	<section class="about-2 section" id="about">
@@ -502,7 +497,6 @@
 		</div> <!-- End container -->
 	</section>
 	<!--功能列表 Ebd-->
-
 
 	<!--功能截屏 Start-->
 	<section class="section" id="screenshot">

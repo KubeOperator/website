@@ -198,7 +198,7 @@ function resizeHeader() {
 
 	}
 }
-// resizeHeader();
+resizeHeader();
 
 
                             
