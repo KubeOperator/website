@@ -10,10 +10,12 @@
 	// 	document.getElementById('preloader').style.display = 'none';
 	// }
 
-	$(window).on("load",function(){
-		$('#preloader').fadeOut('slow',function(){$(this).remove();});
-	});
-
+	// $(window).on("load",function(){
+	// 	$('#preloader').fadeOut('slow',function(){$(this).remove();});
+	// });
+	setTimeout(function () {
+        $('#preloader').remove();
+    }, 1000)
 
 
 
