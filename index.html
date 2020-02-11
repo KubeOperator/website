@@ -724,6 +724,21 @@
 	</footer>
 	<!--footer End -->
 
+	<!--footer-github-start-banner Start-->
+    <section id="footer_start">
+        <a href="https://github.com/kubeoperator/kubeoperator/" target="_blank">
+            <div class="footer-start-box" >
+                <div class="footer-start-title">
+                    <span role="img" aria-label="celibrate">🎉🎉🎉</span>
+                    如果您喜欢 KubeOperator
+                </div>
+                <p class="footer-start-text">请给我们一个 GitHub Star，给我们一份鼓励。</p>
+                <div class="footer-github-text" > Github Star</div>
+                <div class="footer-start-close" id="close" onclick="close_section()" >x</div>
+            </div>
+        </a>
+    </section>
+    <!--footer-github-start-banner End-->
 
 
 	<!--Essential Scripts-->
@@ -776,6 +791,12 @@
 			.on('afterChange', function () {
 				$('.slick-list').removeClass('do-transition')
 			});
+
+		function close_section(e) {
+            event.stopPropagation();
+            event.preventDefault();
+            $("#footer_start").addClass("hidden");
+        }
 	</script>
 
 </body>
