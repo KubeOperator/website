@@ -393,7 +393,7 @@
 					<table class="subscription-table">
 						<tbody>
 							<tr>
-								<td class="table-title-1" rowspan="13">集群 Day 0 规划</td>
+								<td class="table-title-1" rowspan="14">集群 Day 0 规划</td>
 								<td class="table-title-2" rowspan="2">集群模式</td>
 								<td>1 个 Master 节点 n 个 Worker 节点模式：适合开发测试用途</td>
 							</tr>
@@ -402,7 +402,7 @@
 							</tr>
 							<tr>
 								<td class="table-title-2" rowspan="3">计算方案</td>
-								<td>独立主机：支持自行准备的虚机和物理机</td>
+								<td>独立主机：支持自行准备的虚机、公有云主机和物理机</td>
 							</tr>
 							<tr>
 								<td class="td-bg-color">vSphere 平台：支持自动创建主机（使用 Terraform）</td>
@@ -412,7 +412,7 @@
 							</tr>
 							<tr>
 								<td class="table-title-2" rowspan="3">存储方案</td>
-								<td class="td-bg-color">独立主机：支持 NFS / Ceph RBD (通过 Rook) / NetApp （通过Trident)</td>
+								<td class="td-bg-color">独立主机：支持 NFS / Ceph RBD / Local Volume</td>
 							</tr>
 							<tr>
 								<td>vSphere 平台：支持 vSphere Datastore （vSAN 及 vSphere 兼容的集中存储）</td>
@@ -434,43 +434,57 @@
 								<td class="td-bg-color">支持 CoreDNS</td>
 							</tr>
 							<tr>
+								<td class="table-title-2">GPU 方案</td>
+								<td>支持 NVIDIA GPU</td>
+							</tr>
+							<tr>
 								<td class="table-title-2">操作系统</td>
-								<td>支持 CentOS 7.4 / 7.5 / 7.6 / 7.7</td>
+								<td class="td-bg-color">支持 CentOS 7.4 / 7.5 / 7.6 / 7.7</td>
 							</tr>
 							<tr>
 								<td class="table-title-1" rowspan="3">集群 Day 1 部署</td>
 								<td class="table-title-2" rowspan="3">部署</td>
-								<td class="td-bg-color">提供离线环境下的完整安装包</td>
+								<td>提供离线环境下的完整安装包</td>
 							</tr>
 							<tr>
-								<td>支持可视化方式展示部署过程</td>
+								<td class="td-bg-color">支持可视化方式展示部署过程</td>
 							</tr>
 							<tr>
-								<td class="td-bg-color">支持一键自动化部署（使用 Ansible）</td>
+								<td>支持一键自动化部署（使用 Ansible）</td>
 							</tr>
 							<tr>
-								<td class="table-title-1" rowspan="11">集群 Day 2 运营</td>
-								<td class="table-title-2" rowspan="4">管理</td>
-								<td>内置 K8s 官方的 Dashboard 管理应用</td>
+								<td class="table-title-1" rowspan="15">集群 Day 2 运营</td>
+								<td class="table-title-2" rowspan="6">管理</td>
+								<td class="td-bg-color">支持用户权限管理，并对接 LDAP/AD</td>
 							</tr>
 							<tr>
-								<td class="td-bg-color">内置 Weave Scope 管理应用</td>
+								<td>对外开放 REST API</td>
 							</tr>
 							<tr>
-								<td>提供 Web Kubectl 界面</td>
+								<td class="td-bg-color">内置 K8s Dashboard 管理应用</td>
+							</tr>
+
+							<tr>
+								<td>内置 Weave Scope 管理应用</td>
 							</tr>
 							<tr>
-								<td class="td-bg-color">内置 Helm</td>
+								<td class="td-bg-color">提供 Web Kubectl 界面</td>
 							</tr>
 							<tr>
-								<td class="table-title-2" rowspan="3">可观察性</td>
-								<td>内置 Promethus，支持对集群、节点、Pod、Container的全方位监控和告警</td>
+								<td>内置 Helm</td>
 							</tr>
 							<tr>
-								<td class="td-bg-color">内置 Loki 日志方案</td>
+								<td class="table-title-2" rowspan="4">可观察性</td>
+								<td class="td-bg-color">内置 Promethus，支持对集群、节点、Pod、Container的全方位监控和告警</td>
 							</tr>
 							<tr>
-								<td>内置 Grafana 作为监控和日志展示</td>
+								<td>内置 Loki 日志方案</td>
+							</tr>
+							<tr>
+								<td class="td-bg-color">内置 Grafana 作为监控和日志展示</td>
+							</tr>
+							<tr>
+								<td>支持消息中心，通过钉钉、微信通知各种集群异常事件</td>
 							</tr>
 							<tr>
 								<td class="table-title-2">升级</td>
@@ -485,8 +499,12 @@
 								<td class="td-bg-color">支持 etcd 定期备份</td>
 							</tr>
 							<tr>
+								<td class="table-title-2">合规</td>
+								<td>支持集群合规检查并可视化展示结果</td>
+							</tr>
+							<tr>
 								<td class="table-title-2">应用商店</td>
-								<td>集成 KubeApps 应用商店</td>
+								<td class="td-bg-color">集成 KubeApps Plus 应用商店，快速部署 CI/CD、AI 深度学习等应用</td>
 							</tr>
 						</tbody>
 					</table>
