@@ -393,7 +393,7 @@
 					<table class="subscription-table">
 						<tbody>
 							<tr>
-								<td class="table-title-1" rowspan="14">集群 Day 0 规划</td>
+								<td class="table-title-1" rowspan="15">集群 Day 0 规划</td>
 								<td class="table-title-2" rowspan="2">集群模式</td>
 								<td>1 个 Master 节点 n 个 Worker 节点模式：适合开发测试用途</td>
 							</tr>
@@ -428,7 +428,7 @@
 								<td class="td-bg-color">支持通过 F5 Big IP 对外暴露服务</td>
 							</tr>
 							<tr>
-								<td>支持 Traefik</td>
+								<td>支持 Traefik / ingress-nginx</td>
 							</tr>
 							<tr>
 								<td class="td-bg-color">支持 CoreDNS</td>
@@ -442,69 +442,79 @@
 								<td class="td-bg-color">支持 CentOS 7.4 / 7.5 / 7.6 / 7.7</td>
 							</tr>
 							<tr>
+								<td class="table-title-2">容器运行时</td>
+								<td>支持 Docker / containerd</td>
+							</tr>
+							<tr>
 								<td class="table-title-1" rowspan="3">集群 Day 1 部署</td>
 								<td class="table-title-2" rowspan="3">部署</td>
-								<td>提供离线环境下的完整安装包</td>
+								<td class="td-bg-color">提供离线环境下的完整安装包</td>
 							</tr>
 							<tr>
-								<td class="td-bg-color">支持可视化方式展示部署过程</td>
+								<td>支持可视化方式展示部署过程</td>
 							</tr>
 							<tr>
-								<td>支持一键自动化部署（使用 Ansible）</td>
+								<td class="td-bg-color">支持一键自动化部署（使用 Ansible）</td>
 							</tr>
 							<tr>
-								<td class="table-title-1" rowspan="15">集群 Day 2 运营</td>
-								<td class="table-title-2" rowspan="6">管理</td>
-								<td class="td-bg-color">支持用户权限管理，并对接 LDAP/AD</td>
+								<td class="table-title-1" rowspan="17">集群 Day 2 运营</td>
+								<td class="table-title-2" rowspan="8">管理</td>
+								<td>支持以项目为核心的分级授权管理</td>
 							</tr>
 							<tr>
-								<td>对外开放 REST API</td>
+								<td class="td-bg-color">支持系统管理员、项目管理员和只读用户等三种角色</td>
 							</tr>
 							<tr>
-								<td class="td-bg-color">内置 K8s Dashboard 管理应用</td>
+								<td>支持对接 LDAP/AD</td>
+							</tr>
+							<tr>
+								<td class="td-bg-color">对外开放 REST API</td>
+							</tr>
+							<tr>
+								<td>可通过应用商店安装 K8s Dashboard 管理应用</td>
 							</tr>
 
 							<tr>
-								<td>内置 Weave Scope 管理应用</td>
+								<td class="td-bg-color">可通过应用商店安装 Weave Scope 管理应用</td>
 							</tr>
 							<tr>
-								<td class="td-bg-color">提供 Web Kubectl 界面</td>
+								<td>提供 Web Kubectl 界面</td>
 							</tr>
 							<tr>
-								<td>内置 Helm</td>
+								<td class="td-bg-color">内置 Helm</td>
 							</tr>
 							<tr>
 								<td class="table-title-2" rowspan="4">可观察性</td>
-								<td class="td-bg-color">内置 Promethus，支持对集群、节点、Pod、Container的全方位监控和告警</td>
+								<td>内置 Promethus，支持对集群、节点、Pod、Container的全方位监控和告警</td>
 							</tr>
 							<tr>
-								<td>内置 Loki 日志方案</td>
+								<td class="td-bg-color">内置 Loki 日志方案</td>
 							</tr>
 							<tr>
-								<td class="td-bg-color">内置 Grafana 作为监控和日志展示</td>
+								<td>内置 Grafana 作为监控和日志展示</td>
 							</tr>
 							<tr>
-								<td>支持消息中心，通过钉钉、微信通知各种集群异常事件</td>
+								<td class="td-bg-color">支持消息中心，通过钉钉、微信通知各种集群异常事件</td>
 							</tr>
 							<tr>
 								<td class="table-title-2">升级</td>
-								<td class="td-bg-color">支持集群升级</td>
+								<td>支持集群升级</td>
 							</tr>
 							<tr>
 								<td class="table-title-2">伸缩</td>
-								<td>支持增加或者减少 Worker 节点</td>
+								<td class="td-bg-color">支持增加或者减少 Worker 节点</td>
 							</tr>
 							<tr>
 								<td class="table-title-2">备份</td>
-								<td class="td-bg-color">支持 etcd 定期备份</td>
+								<td>支持 etcd 定期备份</td>
 							</tr>
 							<tr>
 								<td class="table-title-2">合规</td>
-								<td>支持集群合规检查并可视化展示结果</td>
+								<td class="td-bg-color">支持集群合规检查（健康评分）并可视化展示结果</td>
 							</tr>
 							<tr>
 								<td class="table-title-2">应用商店</td>
-								<td class="td-bg-color">集成 KubeApps Plus 应用商店，快速部署 CI/CD、AI 深度学习等应用</td>
+								<td>集成 KubeApps Plus 应用商店，快速部署 CI/CD、AI 深度学习等应用</td>
 							</tr>
 						</tbody>
 					</table>
