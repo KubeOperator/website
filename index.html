@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+<html class="no-js lt-ie9 lt-ie8">
+<html class="no-js lt-ie9">
+<html class="no-js">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>KubeOperator - 开源容器平台 - 官网</title>
+	<meta name="description" content="KubeOperator 是一个开源项目，在离线网络环境下，通过可视化 Web UI 在 VMware、Openstack 或者物理机上规划、部署和运营生产级别的 Kubernetes 集群。 ">
+	<meta name="keywords" content="KubeOperator, K8s 部署，K8s 搭建，K8s 安装，Kubernetes 安装, Kubernetes 部署, Kubernetes 搭建, Kubernetes as a Service, Kubernetes 离线安装, K8s 安装工具, K8s 部署工具, K8s 管理工具, K8s as a Service, K8s 离线安装">
+	<meta name="author" content="杭州飞致云信息科技有限公司">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="images/logo/ko-logo-favicon.png" />
+	<link rel="stylesheet" type="text/css" href="./plugins/revo-slider/css/settings.css">
+	<link rel="stylesheet" type="text/css" href="./plugins/revo-slider/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="./plugins/revo-slider/css/navigation.css">
+	<link rel="stylesheet" type="text/css" href="./plugins/revo-slider/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+	<link rel="stylesheet" type="text/css" href="./plugins/revo-slider/fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./plugins/revo-slider/css/settings.css">
+	<link rel="stylesheet" type="text/css" href="./plugins/revo-slider/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="./plugins/revo-slider/css/navigation.css">
+	<link rel="stylesheet" href="./plugins/themefisher-font/style.css">
+	<link rel="stylesheet" href="./plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./plugins/lightbox2/dist/css/lightbox.min.css">
+	<link rel="stylesheet" href="./plugins/slick-carousel/slick/slick.css">
+	<link rel="stylesheet" href="./plugins/slick-carousel/slick/slick-theme.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel='stylesheet prefetch' href='./css/slick.css'>
+	<link rel="stylesheet" href="./css/mega.css">
+
+	<link rel="stylesheet" type="text/css" href="./css/colors/red.css" title="light-green">
+	<script src="js/mega.js"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147297392-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-147297392-1');
+	</script>
+
+</head>
+
+<body id="body">
+
+	<header class="navigation navbar navbar-fixed-top">
+		<svg class="hidden-print" aria-hidden="true" style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<defs>
+				<symbol id="mega-nav-icon-angle" viewBox="0 0 13 7">
+					<polygon points="6.5,6.5 0.7,1.6 1.3,0.8 6.5,5.2 11.7,0.8 12.3,1.6 "></polygon>
+				</symbol>
+				<symbol id="mega-nav-icon-close" viewBox="0 0 13 15">
+					<path vector-effect="non-scaling-stroke" d="M1.1 14L11.9 1M11.9 14L1.1 1"></path>
+				</symbol>
+  			</defs>
+		</svg>
+		<div class="hidden-print mega-nav-sandbox">
+			<div class="mega-nav-banner">
+				<div class="container">
+					<div class="mega-nav-banner-item">
+						<a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="images/logo/banner-logo-f2c.png" alt="FIT2CLOUD Logo"></a>
+					</div>
+					<div class="mega-nav-banner-item">
+						<p class="mega-nav-tagline">
+							<span class="visible-xs text-muted">了解飞致云旗下软件产品</span>
+							<span class="hidden-xs text-muted">了解飞致云旗下软件产品</span>
+						</p>
+						<div id="#mega-nav" class="mega-nav">
+                            <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
+								<div class="mega-nav-ctrl-items">
+									<span class="mega-nav-icon-outline">
+										<svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use>
+										</svg>
+										<span class="visuallyhidden">Open</span>
+									</span>
+								</div>
+							</button>
+
+							<div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none;">
+								<div class="mega-nav-body">
+									<button type="button" id="mega-nav-close" class="mega-nav-close"><svg class="mega-nav-icon mega-nav-icon-close" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-close"></use></svg><span class="visuallyhidden">Close</span></button>
+									<div class="mega-nav-body-header">
+										<div class="mega-nav-body-header-item">
+											<h2 class="mega-nav-h1">我们的软件为您提供了构建、运行、管理和保护企业所需的关键工具</h2>
+											<p class="mega-nav-h2"></p>
+										</div>
+									</div>
+									<div class="mega-nav-body-grid">
+										<div class="mega-nav-body-grid-item">
+											<h3 class="mega-nav-h3">构建</h3>
+											<ul class="mega-nav-grid">
+												<li>
+													<a href="https://metersphere.io/" class="mega-nav-grid-item mega-nav-grid-item-metersphere">
+														<div class="mega-nav-grid-item-img">
+															<img src="images/logo/banner-nav-ms.png" alt="MeterSphere Logo">
+														</div>
+                                                        <span class="mega-nav-h2">开源持续测试平台</span>
+														<ul>
+															<li><span class="mega-nav-tag">BUILD</span></li>
+														</ul>
+													</a>
+												</li>
+											</ul>
+										</div>
+                                        <div class="mega-nav-body-grid-item">
+											<h3 class="mega-nav-h3">运行</h3>
+											<ul class="mega-nav-grid">
+												<li>
+													<a href="https://kubeoperator.io/" class="mega-nav-grid-item mega-nav-grid-item-kubeoperator is-active">
+														<div class="mega-nav-grid-item-img">
+															<img src="images/logo/banner-nav-ko.png" alt="KubeOperator Logo">
+														</div>
+                                                        <span class="mega-nav-h2">开源容器平台</span>
+														<ul>
+															<li><span class="mega-nav-tag">RUN</span></li>
+														</ul>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="mega-nav-body-grid-item">
+											<h3 class="mega-nav-h3">管理</h3>
+											<ul class="mega-nav-grid">
+												<li>
+													<a href="https://www.fit2cloud.com/" class="mega-nav-grid-item mega-nav-grid-item-fit2cloud">
+														<div class="mega-nav-grid-item-img">
+															<img src="images/logo/banner-nav-f2c.png" alt="JumpServer Logo">
+														</div>
+                                                        <span class="mega-nav-h2">多云管理平台</span>
+														<ul>
+															<li><span class="mega-nav-tag">MANAGE</span></li>
+														</ul>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="mega-nav-body-grid-item">
+											<h3 class="mega-nav-h3">保护</h3>
+											<ul class="mega-nav-grid">
+												<li>
+													<a href="https://www.fit2cloud.com/" class="mega-nav-grid-item mega-nav-grid-item-jumpserver">
+														<div class="mega-nav-grid-item-img">
+															<img src="images/logo/banner-nav-js.png" alt="JumpServer Logo">
+														</div>
+                                                        <span class="mega-nav-h2">开源堡垒机</span>
+														<ul>
+															<li><span class="mega-nav-tag">PROTECT</span></li>
+														</ul>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="mega-nav-body-footer"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container" style="clear:both">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!-- logo -->
+				<a class="navbar-brand logo" href="index.html">
+					<img class="logo-default" src="images/logo/ko-logo-default.png" alt="logo" />
+					<img class="logo-white" src="images/logo/ko-logo-white.png" alt="logo" />
+				</a>
+				<!-- /logo -->
+			</div>
+			<nav class="collapse navbar-collapse navbar-right">
+				<ul class="nav navbar-nav menu">
+					<li><a  href="./index.html">首页</a></li>
+					<li><a target="_blank" href="https://docs.kubeoperator.io/">文档</a></li>
+					<li><a target="_blank" href="https://github.com/KubeOperator/KubeOperator/releases">下载</a></li>
+					<li><a target="_blank" href="https://blog.fit2cloud.com/?cat=189">博客</a></li>
+					<li><a target="_blank" href="https://github.com/KubeOperator/kubeapps-plus">应用商店</a></li>
+					<li><a target="_blank" href="https://www.fit2cloud.com/purchase/index.html">商业产品</a></li>
+					<li><a target="_blank" href="#connection">联系我们</a></li>
+					<li><a href="" style="margin-top: 3px;"><iframe src="./github-btn.html?user=kubeoperator&repo=kubeoperator&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe></a></li>
+
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section class="testimonial section phone-height" style="background-image: url(images/landing/landing2.png) ;background-size: cover;padding-top: 0;height: 100vh">
+		<div class="container">
+			<div class="row" style="margin-top: -moz-calc((100vh - 200px)/2);    margin-top: -webkit-calc((100vh - 200px)/2);    margin-top: calc((100vh - 200px)/2);">
+				<div class="col-lg-12">
+					<div class="testimonial-slider">
+						<div class="item text-center">
+							<div class="client-details">
+								<div class="testimonial-slider">
+									<div class="row">
+										<div class="col-md-12 text-center">
+											<div class="col-md-12 text-center phone-title" style="font-size: 64px; font-weight: 500;letter-spacing:2px;padding-bottom: 10px;color: white">
+												从这里开启您的 Kubernetes 之旅
+											</div>
+											<p class="phone-text" style="font-size: 20px;width: 100%;font-weight: 300;">
+												KubeOperator 是一个开源项目，在离线网络环境下，通过可视化 Web UI 在 VMware、Openstack 或者物理机上规划、部署和运营生产级别的 Kubernetes 集群。
+											</p>
+											<ul class="list-inline wow fadeInUp text-center" data-wow-duration=".5s" data-wow-delay=".10s" style="margin-top: 50px">
+												<li>
+													<a data-scroll href="https://github.com/kubeoperator/kubeoperator" target="_blank" class="btn btn-main">
+														访问 GitHub 项目
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="web-kubernetes-banner" class="service-2 section"
+		style="background-image: url(./images/banner/banner6.png);padding-top: 0px;padding-bottom: 0px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-xs-4 text-center"
+					style="margin-top: 60px;margin-bottom: 30px;padding-right: 10px;border-right: 2px solid #41658F;">
+					<img src="images/ko/ko-kubernetes.svg" style="width:40%" class="inline-block" alt="">
+				</div>
+				<div class="col-md-9 col-xs-8" style="padding-top: 60px;margin-bottom: 30px;padding-left: 20px">
+					<div class="row text-center">
+						<div class="col-md-12 text-left">
+							<div class="title">
+								<div style="font-size: 25px;color: #41658F;letter-spacing: 0;padding-bottom: 20px">
+									KubeOperator 已通过云原生基金会（CNCF）的 Kubernetes 软件一致性认证
+								</div>
+								<a class="btn btn-main phone-size" href="https://landscape.cncf.io/" target="_blank"
+									style="margin-top: 30px">
+									了解更多
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- End row -->
+		</div> <!-- End container -->
+	</section>
+
+	<section id="phone-kubernetes-banner" class="service-2 section" style="background-image: url(./images/banner/banner6.png);padding-top: 0px;padding-bottom: 0px;">
+		<div class="container">
+			<div class="row">
+				<div class=" col-xs-4 text-center"
+					style="margin-top: 60px;margin-bottom: 30px;padding-right: 10px;border-right: 2px solid #41658F;">
+					<img src="images/kubernetes.svg" style="width:40%" class="inline-block" alt="">
+				</div>
+				<div class=" col-xs-8" style="padding-top: 60px;margin-bottom: 30px;padding-left: 20px">
+					<div class="row text-center">
+						<div class="col-md-12 text-left">
+							<div class="title">
+								<div style="font-size: 14px;color: #41658F;letter-spacing: 0;padding-bottom: 20px;">
+									KubeOperator 已通过云原生基金会（CNCF）的 Kubernetes 一致性认证
+								</div>
+								<a class="btn phone-btn-main " href="https://landscape.cncf.io/" target="_blank">
+									了解更多
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- End row -->
+		</div> <!-- End container -->
+	</section>
+
+	<section class="about-2 section" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="title text-center">
+					<h2>整体架构</h2>
+					<p>KubeOperator 提供可视化的界面和经过验证的原生 K8s 离线安装包，使用 Terraform 自动创建主机，通过 Ansible 完成自动化部署和变更操作，支持 K8s 集群 从
+						Day 0 规划，到 Day 1 部署，到 Day 2 运营的全生命周期管理。</p>
+					<div class="border"></div>
+				</div>
+				<div class="col-md-10 col-md-offset-1">
+					<img src="./images/ko/ko-jiagou.jpg" class="img-responsive" alt="">
+				</div>
+			</div> <!-- End row -->
+		</div> <!-- End container -->
+	</section>
+
+	<section class="service-2 section section-rewrite" id="advantage">
+		<div class="container">
+			<div class="row">
+
+				<!-- section title -->
+				<div class="title text-center">
+					<h2>技术优势</h2>
+					<div class="border"></div>
+				</div>
+				<!-- /section title -->
+				<div class="col-md-12">
+					<div class="row text-center" style="float: none">
+						<div class="col-md-3 col-sm-3 col-xs-12">
+							<div class="service-item">
+								<i class="fa fa-gears "></i>
+								<h4>简单易用</h4>
+								<p>通过 Web UI 来管理和运营 K8s 集群</p>
+							</div>
+						</div><!-- END COL -->
+						<div class="col-md-3 col-sm-3 col-xs-12">
+							<div class="service-item">
+								<i class="fa fa-download"></i>
+								<h4>离线支持</h4>
+								<p>支持离线环境下 K8s 集群的部署和升级</p>
+							</div>
+						</div><!-- END COL -->
+						<div class="col-md-3 col-sm-3 col-xs-12">
+							<div class="service-item">
+								<i class="fa fa-group"></i>
+								<h4>按需创建</h4>
+								<p>一键创建和部署 K8s 集群
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</p>
+
+							</div>
+						</div><!-- END COL -->
+						<div class="col-md-3 col-sm-3 col-xs-12">
+							<div class="service-item">
+								<i class="fa fa-bolt fa-4x"></i>
+								<h4>按需伸缩</h4>
+								<p>快速伸缩 K8s 集群，提升资源使用效率</p>
+							</div>
+						</div><!-- END COL -->
+						<div class="col-md-3 col-sm-3 col-xs-12">
+							<div class="service-item">
+								<i class="fa fa-refresh fa-4x"></i>
+								<h4>按需修补</h4>
+								<p>快速升级 K8s 集群，与社区版本同步</p>
+							</div>
+						</div><!-- END COL -->
+						<div class="col-md-3 col-sm-3 col-xs-12">
+							<div class="service-item">
+								<i class="fa fa-support"></i>
+								<h4>Multi-AZ 支持</h4>
+								<p>Master 节点分布在不同的故障域上</p>
+							</div>
+						</div><!-- END COL -->
+						<div class="col-md-3 col-sm-3 col-xs-12">
+							<div class="service-item">
+
+								<i class="fa fa-credit-card"></i>
+								<h4>应用商店</h4>
+								<p>快速在 K8s 中部署和管理应用程序</p>
+							</div>
+						</div><!-- END COL -->
+						<div class="col-md-3 col-sm-3 col-xs-12">
+							<div class="service-item">
+								<i class="fa fa-inbox"></i>
+								<h4>GPU 支持</h4>
+								<p>轻松运行机器学习、高性能计算等工作负载</p>
+							</div>
+						</div><!-- END COL -->
+					</div>
+				</div>
+			</div> <!-- End row -->
+		</div> <!-- End container -->
+	</section>
+
+	<section class="about-2 section">
+		<div class="container">
+			<div class="row">
+				<div class="title text-center">
+					<h2>功能列表</h2>
+					<div class="border"></div>
+				</div>
+				<div class="col-md-12 col-sm-12 col-xs-12 subscription-div" style="margin-top: 0px">
+					<table class="subscription-table">
+						<tbody>
+							<tr>
+								<td class="table-title-1" rowspan="15">集群 Day 0 规划</td>
+								<td class="table-title-2" rowspan="2">集群模式</td>
+								<td>1 个 Master 节点 n 个 Worker 节点模式：适合开发测试用途</td>
+							</tr>
+							<tr>
+								<td class="td-bg-color">3 个 Master 节点 n 个 Worker 节点模式：适合生产用途</td>
+							</tr>
+							<tr>
+								<td class="table-title-2" rowspan="3">计算方案</td>
+								<td>独立主机：支持自行准备的虚机、公有云主机和物理机</td>
+							</tr>
+							<tr>
+								<td class="td-bg-color">vSphere 平台：支持自动创建主机（使用 Terraform）</td>
+							</tr>
+							<tr>
+								<td>Openstack 平台：支持自动创建主机 （使用 Terraform）</td>
+							</tr>
+							<tr>
+								<td class="table-title-2" rowspan="3">存储方案</td>
+								<td class="td-bg-color">独立主机：支持 NFS / Ceph RBD / Local Volume</td>
+							</tr>
+							<tr>
+								<td>vSphere 平台：支持 vSphere Datastore （vSAN 及 vSphere 兼容的集中存储）</td>
+							</tr>
+							<tr>
+								<td class="td-bg-color">Openstack 平台：支持 Openstack Cinder （Ceph 及 Cinder 兼容的集中存储）</td>
+							</tr>
+							<tr>
+								<td class="table-title-2" rowspan="4">网络方案</td>
+								<td>支持 Flannel / Calico 网络插件</td>
+							</tr>
+							<tr>
+								<td class="td-bg-color">支持通过 F5 Big IP 对外暴露服务</td>
+							</tr>
+							<tr>
+								<td>支持 Traefik / ingress-nginx</td>
+							</tr>
+							<tr>
+								<td class="td-bg-color">支持 CoreDNS</td>
+							</tr>
+							<tr>
+								<td class="table-title-2">GPU 方案</td>
+								<td>支持 NVIDIA GPU</td>
+							</tr>
+							<tr>
+								<td class="table-title-2">操作系统</td>
+								<td class="td-bg-color">支持 RHEL/CentOS 7.4 以上版本</td>
+							</tr>
+							<tr>
+								<td class="table-title-2">容器运行时</td>
+								<td>支持 Docker / containerd</td>
+							</tr>
+							<tr>
+								<td class="table-title-1" rowspan="3">集群 Day 1 部署</td>
+								<td class="table-title-2" rowspan="3">部署</td>
+								<td class="td-bg-color">提供离线环境下的完整安装包</td>
+							</tr>
+							<tr>
+								<td>支持可视化方式展示部署过程</td>
+							</tr>
+							<tr>
+								<td class="td-bg-color">支持一键自动化部署（使用 Ansible）</td>
+							</tr>
+							<tr>
+								<td class="table-title-1" rowspan="20">集群 Day 2 运营</td>
+								<td class="table-title-2" rowspan="9">管理</td>
+								<td>支持以项目为核心的分级授权管理</td>
+							</tr>
+							<tr>
+								<td class="td-bg-color">支持系统管理员、项目管理员和只读用户等三种角色</td>
+							</tr>
+							<tr>
+								<td>支持对接 LDAP/AD</td>
+							</tr>
+							<tr>
+								<td class="td-bg-color">对外开放 REST API</td>
+							</tr>
+							<tr>
+								<td>可通过应用商店安装 K8s Dashboard 管理应用</td>
+							</tr>
+
+							<tr>
+								<td class="td-bg-color">可通过应用商店安装 Weave Scope 管理应用</td>
+							</tr>
+							<tr>
+								<td>提供 Web Kubectl 界面</td>
+							</tr>
+							<tr>
+								<td class="td-bg-color">内置 Helm</td>
+							</tr>
+							<tr>
+								<td>支持更新证书</td>
+							</tr>
+							<tr>
+								<td class="table-title-2" rowspan="4">可观察性</td>
+								<td>内置 Promethus，支持对集群、节点、Pod、Container的全方位监控和告警</td>
+							</tr>
+							<tr>
+								<td class="td-bg-color">内置 Loki 日志方案</td>
+							</tr>
+							<tr>
+								<td>内置 Grafana 作为监控和日志展示</td>
+							</tr>
+							<tr>
+								<td class="td-bg-color">支持消息中心，通过钉钉、微信通知各种集群异常事件</td>
+							</tr>
+							<tr>
+								<td class="table-title-2">升级</td>
+								<td>支持集群升级</td>
+							</tr>
+							<tr>
+								<td class="table-title-2">伸缩</td>
+								<td class="td-bg-color">支持增加或者减少 Worker 节点</td>
+							</tr>
+							<tr>
+								<td class="table-title-2">备份</td>
+								<td>支持 etcd 定期备份</td>
+							</tr>
+							<tr>
+								<td class="table-title-2" rowspan="2">安全合规</td>
+								<td class="td-bg-color">支持集群健康评分</td>
+							</tr>
+							<tr>
+								<td>支持 CSI 安全扫描</td>
+							</tr>
+							<tr>
+								<td class="table-title-2" rowspan="2">应用商店</td>
+								<td class="td-bg-color">提供 GitLab、Jenkins、Harbor、Argo CD 等 CI/CD 工具</td>
+							</tr>
+							<tr>
+								<td>提供深度学习AI 应用，比如 TensorFlow</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="section" id="screenshot">
+		<div class="container">
+			<div class="row">
+				<div class=" text-center">
+					<h2>功能截屏</h2>
+					<div class="border"></div>
+				</div>
+			</div>
+		</div>
+		<div id="slider" class="slider">
+			<div>
+				<img data-lazy="./images/ko/features/1.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/2.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/3.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/4.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/5.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/6.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/7.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/8.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/9.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/10.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/11.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/12.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/13.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/14.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/15.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/16.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/17.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/18.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/19.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/20.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/21.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/22.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/23.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/24.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/25.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/26.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/27.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/28.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/29.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/30.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/31.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/32.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/33.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/34.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/35.png" alt="">
+			</div>
+			<div>
+				<img data-lazy="./images/ko/features/36.png" alt="">
+			</div>
+		</div>
+	</section>
+
+	<section class="promo-video video-rewrite" id="video">
+		<div class="container">
+			<div class="row">
+				<div class="title text-center">
+					<h2>演示视频</h2>
+					<p>从 Kubernetes 集群 Day 0 规划，到 Day 1 部署，到 Day 2 运营，详细展示 KubeOperator 的功能。</p>
+					<div class="border"></div>
+				</div>
+				<div class="col-md-8 col-md-offset-2">
+					<video style="max-width: 100%" id="intro-video" class="" controlslist="nodownload" preload="meta"
+						controls=""
+						src=" https://kubeoperator-1256577600.file.myqcloud.com/video/KubeOperator2.1.mp4"></video>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="call-to-action section" id="jumpserver">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h2>JumpServer 明星团队出品</h2>
+					<p>KubeOperator 是 FIT2CLOUD 飞致云旗下开源项目，该项目由开源明星项目 JumpServer 的原班人马打造。</p>
+					<a href="https://github.com/jumpserver/jumpserver" class="btn btn-main">了解 JumpServer</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="footer" class="contact section">
+        <div class="container">
+            <div class="row">
+                <div class="title text-center">
+                    <h1>联系我们</h1>
+					<div class="border"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2 col-xs-12">
+                    <p class="text-center">
+                        <strong><span class="navy">官方QQ群(825046920)</span></strong><br />
+                        <strong><span class="navy"></span></strong><br />
+                        <img src="images/ko/ko-qq.png" alt="官方QQ群" class="img-thumbnail" width="120">
+                    </p>
+
+                </div>
+                <div class="col-md-2 col-xs-12">
+                    <p class="text-center">
+                        <strong><span class="navy">微信公众号</span></strong><br />
+                        <strong><span class="navy"></span></strong><br />
+                        <img src="images/ko/ko-qq.png" alt="微信公众号" class="img-thumbnail" width="120">
+                    </p>
+                </div>
+                <div class="col-md-2 col-xs-12"></div>
+                <div class="col-md-4 col-xs-12 col-md-offset-2" id="connection">
+                    <p>
+                        <strong><span class="navy">联系信息</span></strong><br />
+                        <strong><span class="navy"></span></strong><br />
+                    </p>
+
+					<p style="color: #676a6c">
+						<i class="fa fa-phone fa-sm"></i>
+                        400-052-0755
+                    </p>
+
+					<p style="color: #676a6c">
+						<a href="https://jinshuju.net/f/QrZJpt" style="color: #676a6c">
+							<span>技术咨询</span>
+						</a>
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+	<footer>
+		<div class="footer-bottom">
+			<h5>© 2014-2020 杭州飞致云信息科技有限公司, All Rights Reserved.</h5>
+			<h5><a href="http://www.beian.miit.gov.cn" style="color: #888888">京ICP备15023818号</a></h5>
+		</div>
+	</footer>
+
+
+	<script src="plugins/jquery/dist/jquery.min.js"></script>
+	<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script src="plugins/parallax/jquery.parallax-1.1.3.js"></script>
+	<script src="plugins/lightbox2/dist/js/lightbox.min.js"></script>
+	<script src="plugins/slick-carousel/slick/slick.min.js"></script>
+	<script src="plugins/mixitup/dist/mixitup.min.js"></script>
+	<script src="plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+	<script type="text/javascript" src="plugins/revo-slider/js/jquery.themepunch.tools.min.js"></script>
+	<script type="text/javascript" src="plugins/revo-slider/js/jquery.themepunch.revolution.min.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+		jQuery(document).ready(function () {
+
+			jQuery('#rev_slider_1').show().revolution({
+				sliderLayout: 'fullscreen',
+				lazyType: "all"
+			});
+			resizeHeader();
+		});
+		$('.slider').slick({
+			arrows: true,
+			dots: false,
+			infinite: true,
+			speed: 500,
+			slidesToShow: 1,
+			centerMode: true,
+			variableWidth: true,
+			draggable: false,
+			lazyLoad:'ondemand',
+		});
+
+		$('.slider')
+			.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+				$('.slick-list').addClass('do-transition')
+			})
+			.on('afterChange', function () {
+				$('.slick-list').removeClass('do-transition')
+			});
+
+	</script>
+
+</body>
+
+</html>
