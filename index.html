@@ -196,39 +196,83 @@
 		</div>
 	</header>
 
-	<section class="testimonial section phone-height" style="background-image: url(images/landing/landing2.png) ;background-size: cover;padding-top: 0;height: 100vh">
-		<div class="container">
-			<div class="row" style="margin-top: -moz-calc((100vh - 200px)/2);    margin-top: -webkit-calc((100vh - 200px)/2);    margin-top: calc((100vh - 200px)/2);">
-				<div class="col-lg-12">
-					<div class="testimonial-slider">
-						<div class="item text-center">
-							<div class="client-details">
-								<div class="testimonial-slider">
-									<div class="row">
-										<div class="col-md-12 text-center">
-											<div class="col-md-12 text-center phone-title" style="font-size: 64px; font-weight: 500;letter-spacing:2px;padding-bottom: 10px;color: white">
-												从这里开启您的 Kubernetes 之旅
-											</div>
-											<p class="phone-text" style="font-size: 20px;width: 100%;font-weight: 300;">
-												KubeOperator 是一个开源项目，在离线网络环境下，通过可视化 Web UI 在 VMware、Openstack 或者物理机上规划、部署和运营生产级别的 Kubernetes 集群。
-											</p>
-											<ul class="list-inline wow fadeInUp text-center" data-wow-duration=".5s" data-wow-delay=".10s" style="margin-top: 50px">
-												<li>
-													<a data-scroll href="https://github.com/kubeoperator/kubeoperator" target="_blank" class="btn btn-main">
-														访问 GitHub 项目
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+	<div id="inSlider" class="carousel carousel-fade banner-display" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#inSlider" data-slide-to="0"></li>
+            <li data-target="#inSlider" data-slide-to="1"></li>
+            <li data-target="#inSlider" data-slide-to="2"></li>
+            <li data-target="#inSlider" data-slide-to="3" class="active"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item">
+                <div class="container text-center">
+					<div class="carousel-caption blank">
+                        <h1 class="phone-title">多云环境下更好用的堡垒机</h1>
+                        <p>JumpServer 是全球首款开源堡垒机，使用 GNU GPL v2.0 开源协议，是符合 4A 机制的运维安全审计系统</p>
+                        <p>
+                            <a class="btn btn-main-header" href="https://github.com/jumpserver/jumpserver"
+                                role="button">
+                                View Project on GitHub
+                            </a>
+                        </p>
+                    </div>
 				</div>
-			</div>
-		</div>
-	</section>
+                <div class="header-back one"></div>
+            </div>
+
+            <div class="item">
+                <div class="container">
+                    <div class="carousel-caption blank">
+                        <h1 class="phone-title">完全开源 符合 4A 机制的堡垒机</h1>
+                        <p>改变世界，从一点点开始</p>
+                        <p>
+                            <a class="btn btn-main-header" href="https://github.com/jumpserver/jumpserver"
+                                role="button">
+                                View Project on GitHub
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="header-back two"></div>
+            </div>
+
+            <div class="item">
+                <div class="container">
+					<div class="carousel-caption blank">
+                        <h1 class="phone-title">JumpServer堡垒机远程办公场景实践</h1>
+                        <p>JumpServer堡垒机如何支持远程办公？</p>
+                        <p>
+                            <a class="btn btn-main-header" href="https://github.com/jumpserver/jumpserver"
+                                role="button">
+                                直播回放
+                            </a>
+                        </p>
+                    </div>
+				</div>
+                <div class="header-back three">
+                    <a style="display: block" href="http://live.vhall.com/907004669"></a>
+                </div>
+            </div>
+
+            <div class="item active">
+                <div class="container">
+					<div class="carousel-caption blank">
+                        <h1 class="phone-title">为企业等保合规保驾护航</h1>
+                        <p>改变世界，从一点点开始</p>
+                        <p>
+                            <a class="btn btn-main-header" href="https://github.com/jumpserver/jumpserver"
+                                role="button">
+                                View Project on GitHub
+                            </a>
+                        </p>
+                    </div>
+				</div>
+                <div class="header-back four">
+                    <a style="display: block" href="http://live.vhall.com/187419651"></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 	<section id="web-kubernetes-banner" class="service-2 section"
 		style="background-image: url(./images/banner/banner6.png);padding-top: 0px;padding-bottom: 0px;">
